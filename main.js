@@ -30,10 +30,12 @@ $(document).ready(function(){
         .css({'color': 'rgb(22, 0, 73)'});
     });
 
-    $('#darkmode').click(function(){
-        document.body.style.backgroundColor = 'black';
-        $('#text1, #text2, #text3, #darkmode')
-        .css({'color': 'white'});
-    });
+    $(document).ready(function(){
+        $('#checkbox').click(function(){
+            var element = document.body;         
+            element.classList.toggle('dark'); 
+        });
+    });            
 });
+
 
